@@ -1,6 +1,36 @@
-<div style="max-width:500px; font-family: Tahoma; margin: 50px; line-height: 55px;">
-Hi everyone, I'm currently living in Portugal and working as an architect for a world-renowned IT organization. 
-I am very satisfied and proud to provide professional services to this crew and their customers. However, due to my personality and habits, I tend to separate my work identity from my virtual identity (or more to the point, meta-identity), so I won't be mentioning anything related to my work and profession in this site, but it doesn't mean that I don't have a love or respect for the business I'm working for. In particular, if you know me from my work identity (e.g. a colleague or customer I serve), please understand this.
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
--> <a href="https://github.com/grammy-work/" target="_blank">my github link (https://github.com/grammy-work/)</a>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="Web.styles.css" rel="stylesheet" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>
